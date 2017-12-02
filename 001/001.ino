@@ -16,7 +16,7 @@ void setup() {
   //LED type
   FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
 
-    
+
 }
 
 void loop() {
@@ -29,6 +29,6 @@ void loop() {
   leds[0] = CRGB::Black;
   FastLED.show();
   delay(500);
-  
+
 
 }
