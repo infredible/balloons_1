@@ -21,7 +21,7 @@ void loop() {
   
   sensor = analogRead(A2);
   //While sensor is not moving, analog pin receive 1023~1024 value
-  if (sensor<900){
+  if (sensor<600){
     leds[0] = CRGB::Black;
     Serial.print("Sensor Value: ");
     Serial.println(sensor);
